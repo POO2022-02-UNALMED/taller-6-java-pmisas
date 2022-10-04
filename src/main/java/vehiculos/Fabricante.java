@@ -2,6 +2,17 @@ package vehiculos;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author paula
+ */
+
+
 public class Fabricante {
     private String nombre;
     private Pais pais;
@@ -9,8 +20,8 @@ public class Fabricante {
     protected int cantidadVentas = 0;
 
     public Fabricante(String nombre, Pais pais) {
-        this.nombre= nombre;
-        this.pais= pais;
+        this.nombre = nombre;
+        this.pais = pais;
         fabricantes.add(this);
     }
 
@@ -18,14 +29,14 @@ public class Fabricante {
         return nombre;
     }
     public void setNombre(String nombre){
-        this.nombre= nombre;
+        this.nombre = nombre;
     }
 
     public Pais getPais(){
         return pais;
     }
     public void setPais(Pais pais){
-        this.pais= pais;
+        this.pais = pais;
     }
 
     public static ArrayList<Fabricante> getFabricantes(){
