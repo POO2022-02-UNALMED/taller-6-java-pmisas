@@ -21,14 +21,14 @@ public class Vehiculo {
         private static int cantidadVehiculos= 0;
 
         public Vehiculo(String placa,int puertas,int velocidadMaxima,String nombre,int precio,float peso,String traccion,Fabricante fabricante) {
-                this.placa= placa;
-                this.puertas= puertas;
-                this.velocidadMaxima= velocidadMaxima;
-                this.nombre= nombre;
-                this.precio= precio;
-                this.peso= peso;
-                this.traccion= traccion;
-                this.fabricante= fabricante;
+                this.placa = placa;
+                this.puertas = puertas;
+                this.velocidadMaxima = velocidadMaxima;
+                this.nombre = nombre;
+                this.precio = precio;
+                this.peso = peso;
+                this.traccion = traccion;
+                this.fabricante = fabricante;
                 cantidadVehiculos++;
 
         }
@@ -37,7 +37,7 @@ public class Vehiculo {
                 return placa;
         }
         public void setPlaca(String placa){
-                this.placa = placa;
+                this.placa= placa;
         }
 
         public int getPuertas(){
@@ -61,20 +61,18 @@ public class Vehiculo {
                 this.nombre = nombre;
         }
 
-        public void setPrecio(int precio){
-                this.precio = precio;
-        }
-        
         public int getPrecio(){
                 return precio;
         }
-
-         public void setPeso(float peso){
-                this.peso = peso;
+        public void setPrecio(int precio){
+                this.precio = precio;
         }
-        
+
         public float getPeso(){
                 return peso;
+        }
+        public void setPeso(float peso){
+                this.peso = peso;
         }
 
         public String getTraccion(){
