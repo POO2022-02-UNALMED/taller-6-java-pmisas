@@ -18,7 +18,7 @@ public class Vehiculo {
     private float peso;
     private String traccion;
     private Fabricante fabricante;
-    private static int CantidadVehiculos = 0;
+    private static int C    antidadVehiculos = 0;
     
     
     public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, float peso, String traccion, Fabricante fabricante){
@@ -30,6 +30,7 @@ public class Vehiculo {
         this.peso = peso;
         this.traccion = traccion;
         this.fabricante = fabricante;
+        CantidadVehiculos++;
     }
 
     public String getPlaca() {
