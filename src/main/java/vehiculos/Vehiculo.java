@@ -1,14 +1,5 @@
 package vehiculos;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author paula
- */
 public class Vehiculo {
         private String placa;
         private int puertas;
@@ -21,14 +12,14 @@ public class Vehiculo {
         private static int cantidadVehiculos= 0;
 
         public Vehiculo(String placa,int puertas,int velocidadMaxima,String nombre,int precio,float peso,String traccion,Fabricante fabricante) {
-                this.placa = placa;
-                this.puertas = puertas;
-                this.velocidadMaxima = velocidadMaxima;
-                this.nombre = nombre;
-                this.precio = precio;
-                this.peso = peso;
-                this.traccion = traccion;
-                this.fabricante = fabricante;
+                this.placa= placa;
+                this.puertas= puertas;
+                this.velocidadMaxima= velocidadMaxima;
+                this.nombre= nombre;
+                this.precio= precio;
+                this.peso= peso;
+                this.traccion= traccion;
+                this.fabricante= fabricante;
                 cantidadVehiculos++;
 
         }
@@ -44,56 +35,56 @@ public class Vehiculo {
                 return puertas;
         }
         public void setPuertas(int puertas){
-                this.puertas = puertas;
+                this.puertas= puertas;
         }
 
         public int getVelocidadMaxima(){
                 return velocidadMaxima;
         }
         public void setVelocidadMaxima(int velocidadMaxima){
-                this.velocidadMaxima = velocidadMaxima;
+                this.velocidadMaxima= velocidadMaxima;
         }
 
         public String getNombre(){
                 return nombre;
         }
         public void setNombre(String nombre){
-                this.nombre = nombre;
+                this.nombre= nombre;
         }
 
         public int getPrecio(){
                 return precio;
         }
         public void setPrecio(int precio){
-                this.precio = precio;
+                this.precio= precio;
         }
 
         public float getPeso(){
                 return peso;
         }
         public void setPeso(float peso){
-                this.peso = peso;
+                this.peso= peso;
         }
 
         public String getTraccion(){
                 return traccion;
         }
         public void setTraccion(String traccion){
-                this.traccion = traccion;
+                this.traccion= traccion;
         }
 
         public Fabricante getFabricante(){
                 return fabricante;
         }
         public void setFabricante(Fabricante fabricante){
-                this.fabricante = fabricante;
+                this.fabricante= fabricante;
         }
 
         public static int getCantidadVehiculos(){
                 return cantidadVehiculos;
         }
         public static void setCantidadVehiculos(int vehiculos){
-                Vehiculo.cantidadVehiculos = vehiculos;
+                Vehiculo.cantidadVehiculos= vehiculos;
         }
         public static String vehiculosPorTipo(){
                 return "Automoviles: " + Automovil.getCantidadAutomoviles() + "\n"
